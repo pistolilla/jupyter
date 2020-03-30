@@ -1,0 +1,21 @@
+deque(['a', 'b', 'c'])
+deque(['a', 'b', 'cd', 'ce', 'cf'])
+yield: cf
+deque(['a', 'b', 'cd', 'ce'])
+yield: ce
+deque(['a', 'b', 'cd'])
+yield: cd
+deque(['a', 'b'])
+deque(['a', 'bd', 'be', 'bf'])
+yield: bf
+deque(['a', 'bd', 'be'])
+yield: be
+deque(['a', 'bd'])
+yield: bd
+deque(['a'])
+deque(['ad', 'ae', 'af'])
+yield: af
+deque(['ad', 'ae'])
+yield: ae
+deque(['ad'])
+yield: ad
