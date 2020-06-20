@@ -26,6 +26,10 @@ multiline comment */'''
 comment = re.compile(r'/\*(?:.|\n)*?\*/')
 comment.findall(text2)
 
+# %% Using match classes **doesn't work**
+pattern = re.compile(r'/\*[.\n]*\*/')
+pattern.findall(text2)
+
 # %%
 m = re.match(comment, "no matching example")
 message = "match" if m else "no match"

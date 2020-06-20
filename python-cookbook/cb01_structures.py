@@ -27,7 +27,8 @@ portfolio = [
 heapq.nlargest(2, portfolio, key= lambda x: x['shares'])
 
 # %% Ordered Dict
-d = OrderedDict()
+#d = OrderedDict()
+d = {} # Starting from Python 3 all dicts are ordered
 d['foo'] = 1
 d['bar'] = 2
 d['spam'] = 3
