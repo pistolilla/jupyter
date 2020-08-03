@@ -30,3 +30,11 @@ model.score(X_test, y_test)
 mean_squared_error(y_test, y_pred)
 
 # %%
+from sklearn.datasets import make_regression
+
+# %%
+X, y = make_regression()
+print(X.shape)
+print(y.shape)
+
+# %%
