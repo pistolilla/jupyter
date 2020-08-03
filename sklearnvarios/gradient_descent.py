@@ -7,7 +7,7 @@ X = np.random.rand(100, 1)
 X.shape
 
 # %%
-y = 4 + 3 * X + np.random.rand(100, 1)
+y = 4 + 3 * X + np.random.randn(100, 1) / 10
 y.shape
 # %%
 plt.plot(X, y, 'b.')
