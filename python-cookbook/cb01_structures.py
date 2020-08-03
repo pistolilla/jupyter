@@ -28,7 +28,7 @@ heapq.nlargest(2, portfolio, key= lambda x: x['shares'])
 
 # %% Ordered Dict
 #d = OrderedDict()
-d = {} # Starting from Python 3 all dicts are ordered
+d = {} # Starting from Python 3 all dicts are ordered, unless you delete a key
 d['foo'] = 1
 d['bar'] = 2
 d['spam'] = 3
@@ -111,7 +111,7 @@ rows = [
 {'address': '4801 N BROADWAY', 'date': '07/01/2012'},
 {'address': '1039 W GRANVILLE', 'date': '07/04/2012'},
 ]
-rows = sorted(rows, key=lambda x: x['date'])
+rows = sorted(rows, key=lambda x: x['date']) #most sort before grouping
 for key, items in groupby(rows, key=lambda x: x['date']):
     print(key)
     for item in items:
