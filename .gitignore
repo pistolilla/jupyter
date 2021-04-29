@@ -1,6 +1,7 @@
 .ipynb_checkpoints
 *-checkpoint.ipynb
 task-1.db
+settings.json
 .DS_Store
 ._*
 large_files/
